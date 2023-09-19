@@ -29,6 +29,8 @@ app.post('/bfhl', (req, res) => {
     .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }))
     .pop();
 
+  alphabets.push(highestAlphabet);
+
   const response = {
     is_success: true,
     user_id: 'john_doe_17091999',
